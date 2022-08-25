@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+<!--    https://docs.spring.io/spring-framework/docs/4.2.x/spring-framework-reference/html/xsd-configuration.html-->
+
+<!--@ComponentScan-->
+<!--    <context:component-scan base-package="pl.michaldurlak"/>-->
+<!--    <context:property-placeholder location="classpath:university.properties"/>-->
+
+<!--@Component-->
+    <bean id="quest" class="pl.michaldurlak.SpringPlayground.domain.Quest"/>
+
+    <bean id="student" class="pl.michaldurlak.SpringPlayground.domain.Student">
+
+<!--@Value-->
+        <constructor-arg index="0" value="Andrzej"/>
+        <constructor-arg index="1" value="19"/>
+
+<!--@Autowired-->
+<!--        <property name="quest" ref="quest"/>-->
+
+    </bean>
+
+
+<!--Rozbicie konfiguracji xml na poszczególne komponenty-->
+<import resource="classpath:config/university-config.xml"/>
+
+
+
+</beans>

@@ -1,15 +1,20 @@
 package pl.michaldurlak.SpringPlayground.domain;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @Component
+@PropertySource("classpath:university.properties")
 public class University {
 
-    private String name = "WSB";
-
+    @Value("${my.university.name}")
+    private String name;
+// gdy chcemy przypisac wartosc za pomoca "=" to przypisuje sie jako string nawet jak wykorzystamy '
+// gdy w pliku application.properties nie bedzie wartosci "${my.university.name}" program nie wystartuje
     public University() {
     }
 

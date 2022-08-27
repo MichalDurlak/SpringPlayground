@@ -1,6 +1,7 @@
 package pl.michaldurlak.SpringPlayground.lesson2.domain;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -10,8 +11,13 @@ public class UniversityLesson2 {
     @Value("${my.university.name:WSB}")
     private String name;
 
+
     StudentLesson2 studentLesson2;
 
+//    @Autowired
+//    public UniversityLesson2(@Qualifier(value = "andrzejekLesson2") StudentLesson2 studentLesson2){
+//        this.studentLesson2 = studentLesson2;
+//    }
     @Autowired
     public UniversityLesson2(StudentLesson2 studentLesson2){
         this.studentLesson2 = studentLesson2;

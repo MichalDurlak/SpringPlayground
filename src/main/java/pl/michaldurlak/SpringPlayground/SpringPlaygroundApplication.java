@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
 //Importowanie konfiguracji z pliku spring-config
-@ImportResource("classpath:config/spring-config.xml")
+//@ImportResource("classpath:config/spring-config.xml")
 public class SpringPlaygroundApplication {
 
 	public static void main(String[] args) {

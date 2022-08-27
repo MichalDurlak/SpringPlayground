@@ -13,9 +13,9 @@
 <!--    <context:property-placeholder location="classpath:university.properties"/>-->
 
 <!--@Component-->
-    <bean id="quest" class="pl.michaldurlak.SpringPlayground.domain.Quest"/>
+    <bean id="quest" class="pl.michaldurlak.SpringPlayground.lesson1.domain.Quest"/>
 
-    <bean id="student" class="pl.michaldurlak.SpringPlayground.domain.Student">
+    <bean id="student" class="pl.michaldurlak.SpringPlayground.lesson1.domain.Student" scope="singleton">
 
 <!--@Value-->
         <constructor-arg index="0" value="Andrzej"/>

@@ -1,4 +1,4 @@
-package pl.michaldurlak.component;
+package pl.michaldurlak.SpringPlayground.lesson1.component;
 
 import org.springframework.stereotype.Component;
 

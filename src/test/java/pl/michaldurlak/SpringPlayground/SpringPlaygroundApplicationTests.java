@@ -2,7 +2,7 @@ package pl.michaldurlak.SpringPlayground;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
-import pl.michaldurlak.SpringPlayground.domain.Student;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.Student;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

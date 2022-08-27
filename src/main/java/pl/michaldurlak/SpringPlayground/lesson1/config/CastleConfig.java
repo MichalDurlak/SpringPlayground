@@ -1,11 +1,11 @@
-package pl.michaldurlak.SpringPlayground.config;
+package pl.michaldurlak.SpringPlayground.lesson1.config;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;
 import org.springframework.context.annotation.PropertySource;
-import pl.michaldurlak.SpringPlayground.domain.University;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.University;
 
 @Configuration
 @PropertySource("classpath:university.properties")

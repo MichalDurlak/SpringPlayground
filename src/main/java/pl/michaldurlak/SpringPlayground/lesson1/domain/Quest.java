@@ -1,4 +1,4 @@
-package pl.michaldurlak.SpringPlayground.domain;
+package pl.michaldurlak.SpringPlayground.lesson1.domain;
 
 public class Quest {
 

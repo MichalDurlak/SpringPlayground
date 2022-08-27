@@ -1,13 +1,13 @@
-package pl.michaldurlak.SpringPlayground;
+package pl.michaldurlak.SpringPlayground.lesson1;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
-import pl.michaldurlak.SpringPlayground.domain.Quest;
-import pl.michaldurlak.SpringPlayground.domain.Student;
-import pl.michaldurlak.SpringPlayground.domain.University;
-import pl.michaldurlak.component.TestComponent;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.Quest;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.Student;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.University;
+import pl.michaldurlak.SpringPlayground.lesson1.component.TestComponent;
 
 @Component
 //@ComponentScan({"pl.michaldurlak.SpringPlayground","pl.michaldurlak.component"})
@@ -23,10 +23,11 @@ public class Starter implements CommandLineRunner {
         // metoda ta zostanie uruchomiona zaraz po zaladowaniu konfiguracji przez springa
 
 
-        Student student1 = new Student("Andrzej", 18);
-        System.out.println(student1);
-
-        Student student2 = new Student("Tomek", 20);
+//ZAKOMENOTWANO Z POWODU URUCHOMIENIA LESSON2
+//        Student student1 = new Student("Andrzej", 18);
+//        System.out.println(student1);
+//
+//        Student student2 = new Student("Tomek", 20);
 
     }
 

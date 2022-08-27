@@ -1,13 +1,9 @@
-package pl.michaldurlak.SpringPlayground.config;
+package pl.michaldurlak.SpringPlayground.lesson1.config;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.ImportResource;
-import org.springframework.context.annotation.PropertySource;
-import pl.michaldurlak.SpringPlayground.domain.Quest;
-import pl.michaldurlak.SpringPlayground.domain.Student;
-import pl.michaldurlak.SpringPlayground.domain.University;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.Quest;
+import pl.michaldurlak.SpringPlayground.lesson1.domain.Student;
 
 @Configuration
 //@ImportResource("classpath:config/university-config.xml")

@@ -1,4 +1,4 @@
-package pl.michaldurlak.SpringPlayground.domain;
+package pl.michaldurlak.SpringPlayground.lesson1.domain;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.PropertySource;
